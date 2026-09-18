@@ -78,26 +78,13 @@ footer {
 }
 
 .logo {
+    display: block;
+    margin: 0 auto;
     width: 200px;
     max-width: 60%;
     height: auto;
 }
 
-.logo-byu {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.6rem;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-    padding-bottom: 0.15rem;
-    border-bottom: 1px solid #b9c7df;
-}
-
-.logo-idaho {
-    margin-top: 0.4rem;
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 0.15em;
-}
 
 /* smaller screens */
 @media (max-width: 600px) {
