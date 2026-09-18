@@ -1,0 +1,122 @@
+/* Mission Statement - BYU-Idaho */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    color: #111111;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    line-height: 1.7;
+}
+
+/* the outlined "page" box */
+.page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 3rem 3rem;
+    border: 1px solid #c8c8c8;
+}
+
+header {
+    text-align: center;
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 1.5rem 0 0;
+    padding-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #3a78c2;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.mission {
+    max-width: 510px;
+    margin: 3rem auto 0;
+    font-size: 1.15rem;
+}
+
+.mission p {
+    margin: 0 0 1.5rem;
+}
+
+.mission .intro {
+    margin-bottom: 1.2rem;
+}
+
+ol {
+    margin: 0;
+    padding-left: 2.2rem;
+}
+
+li {
+    margin-bottom: 1.4rem;
+    padding-left: 0.2rem;
+}
+
+/* logo built with text so no image file is needed */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3f68aa;
+    line-height: 1;
+}
+
+.logo-byu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid #b9c7df;
+}
+
+.logo-idaho {
+    margin-top: 0.4rem;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+}
+
+/* smaller screens */
+@media (max-width: 600px) {
+    .page {
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+    }
+
+    .mission {
+        font-size: 1rem;
+    }
+}
