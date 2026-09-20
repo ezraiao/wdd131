@@ -1,0 +1,53 @@
+/* element selector */
+body {
+    font-family: "Times New Roman", serif;
+}
+
+/* id selector: the gray box with the thin inner border */
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ddd;
+    outline: 1px solid #999;
+    outline-offset: -20px;
+    text-align: center;
+}
+
+/* descendant combinator: p inside #content */
+#content p {
+    color: #2a5d9f;
+    font-size: 1.2rem;
+}
+
+/* element selector: the blue divider line */
+hr {
+    width: 70%;
+    border: none;
+    height: 2px;
+    background-color: #2a5d9f;
+}
+
+img {
+    width: 60%;
+    max-width: 100%;
+}
+
+/* id + element: only h2s inside #topics */
+#topics h2 {
+    margin-bottom: 8px;
+}
+
+/* class selector: remove bullets, keep the block narrow and centered */
+.list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+/* pseudo-class practice from the ponder (optional, not in the screenshot) */
+.list li:nth-of-type(2) {
+    font-style: italic;
+}
