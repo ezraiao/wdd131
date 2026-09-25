@@ -11,6 +11,15 @@ body {
     color: #111111;
     font-family: "Times New Roman", Times, Georgia, serif;
     line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select {
+    display: block;
+    margin: 0 auto 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
 }
 
 /* the outlined "page" box */
@@ -19,6 +28,7 @@ body {
     margin: 0 auto;
     padding: 4rem 3rem 3rem;
     border: 1px solid #c8c8c8;
+    transition: border-color 0.3s ease;
 }
 
 header {
@@ -71,7 +81,7 @@ li {
     padding-left: 0.2rem;
 }
 
-/* logo built with text so no image file is needed */
+/* logo */
 footer {
     margin-top: 3rem;
     text-align: center;
@@ -85,6 +95,20 @@ footer {
     height: auto;
 }
 
+/* dark mode */
+body.dark {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark .page {
+    border-color: #444444;
+}
+
+body.dark h2 {
+    color: #8fb8e8;
+    border-bottom-color: #333333;
+}
 
 /* smaller screens */
 @media (max-width: 600px) {
