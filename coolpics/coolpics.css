@@ -1,0 +1,101 @@
+/* ===== Mobile first (default styles) ===== */
+:root {
+    --primary-color: #4a7bdc;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --background: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Mooli", Arial, sans-serif;
+    font-size: 1.2em;
+    color: var(--text-dark);
+    background-color: var(--background);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Menu button shows on small screens */
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Links are just hidden on mobile for this prove */
+nav {
+    display: none;
+}
+
+nav a {
+    color: var(--text-light);
+    padding: 10px;
+}
+
+/* Gallery: one column on mobile */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px 30px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 3px 3px 8px #333;
+}
+
+/* ===== Tablet: two columns ===== */
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===== Desktop: three columns, show nav links ===== */
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
