@@ -9,12 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Cool Pics &#128247;</h1>
-        <button class="menu-btn">Menu</button>
-        <nav>
+        <button class="menu-btn" aria-label="Menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <nav class="hide">
             <a href="#">Home</a>
             <a href="#">People</a>
             <a href="#">Places</a>
@@ -39,6 +44,7 @@
     </main>
 
     <footer>
+        <p>&copy; 2026 Cool Pics</p>
     </footer>
 </body>
 </html>
