@@ -1,0 +1,123 @@
+:root {
+  --accent: #a3122a;       /* dark red - passes contrast on white */
+  --text: #222222;
+  --border: #e8c9a0;       /* soft tan divider lines */
+  --background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.5;
+}
+
+/* ---------- Header ---------- */
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Main / Article (mobile first) ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.book-details {
+  text-align: right;
+}
+
+.book-details p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+}
+
+.date {
+  font-style: italic;
+}
+
+.book-content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.book-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- Larger devices ---------- */
+@media (min-width: 700px) {
+  .book {
+    grid-template-columns: 150px 1fr;
+    gap: 0;
+  }
+
+  .book-details {
+    padding-right: 1rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .book-content {
+    padding-left: 1.5rem;
+  }
+
+  .book-content img {
+    margin: 0;
+  }
+}
