@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e9eef2;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  margin: 15px 0 5px;
+  color: #2b3a42;
+}
+
+.stats {
+  padding: 0 20px;
+}
+
+.stats p {
+  margin: 6px 0;
+  color: #333;
+}
+
+#message {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.buttons {
+  padding: 15px 0 20px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 0 6px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2b3a42;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #445864;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* hides the h1 visually but screen readers still read it */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
