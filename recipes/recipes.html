@@ -4,26 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RecipeBook</title>
-    <meta name="description" content="Find simple and tasty recipes like apple crisp on RecipeBook." />
+    <meta name="description" content="Find simple and tasty recipes on RecipeBook. Search by name, description, or tag." />
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="RecipeBook">
-    <meta property="og:description" content="Find simple and tasty recipes like apple crisp on RecipeBook.">
-    <meta property="og:url" content="https://ezraiao.github.io/wdd131/recipes">
-    <meta property="og:image" content="https://ezraiao.github.io/wdd131/recipes/images/apple-crisp.jpg">
+    <meta property="og:description" content="Find simple and tasty recipes on RecipeBook. Search by name, description, or tag.">
+    <meta property="og:url" content="https://ezraiao.github.io/wdd131/recipes/">
+    <meta property="og:image" content="https://ezraiao.github.io/wdd131/recipes/images/social-preview-image.png">
 
     <!-- X Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="RecipeBook">
-    <meta name="twitter:description" content="Find simple and tasty recipes like apple crisp on RecipeBook.">
-    <meta name="twitter:image" content="https://ezraiao.github.io/wdd131/recipes/images/apple-crisp.jpg">
+    <meta name="twitter:description" content="Find simple and tasty recipes on RecipeBook. Search by name, description, or tag.">
+    <meta name="twitter:image" content="https://ezraiao.github.io/wdd131/recipes/images/social-preview-image.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/recipe-book.png">
-
-    <!-- Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="images/recipe-book.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Google Font: Amatic SC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="recipes.css" />
+    <script type="module" src="recipes.js" defer></script>
   </head>
   <body>
     <header>
@@ -41,8 +39,8 @@
     </header>
 
     <main>
-      <form class="search" action="#">
-        <input type="search" name="search" placeholder="Find a recipe" aria-label="Find a recipe">
+      <form class="search">
+        <input type="search" id="search" name="search" placeholder="Find a recipe" aria-label="Find a recipe">
         <button type="submit">
           <img src="images/search.svg" alt="search">
         </button>
@@ -50,27 +48,7 @@
 
       <hr>
 
-      <section class="recipe">
-        <div class="recipe-image">
-          <img src="images/apple-crisp.jpg" alt="bowl of apple crisp with vanilla ice cream">
-        </div>
-        <div class="recipe-content">
-          <p class="tag">dessert</p>
-          <h2>Apple Crisp</h2>
-          <span
-            class="rating"
-            role="img"
-            aria-label="Rating: 4 out of 5 stars"
-          >
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
-          <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-        </div>
-      </section>
+      <div id="recipes"></div>
     </main>
 
     <footer>
